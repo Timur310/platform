@@ -6,7 +6,7 @@ export default function Hero() {
   ];
 
   return (
-    <div className="mx-auto max-w-2xl pt-32 fade-up">
+    <div className="mx-auto max-w-2xl pt-32">
       <header className="space-y-6">
         <div className="w-24 h-24 rounded-full bg-gray-800 transition-transform duration-300 ease-out hover:scale-[1.02]" />
 

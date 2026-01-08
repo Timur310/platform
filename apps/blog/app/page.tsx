@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <BlogLayout>
       <div aria-hidden className="noise" />
-      <div className="relative z-10">
+      <div className="relative z-10 fade-up">
 
         <BlogHeader />
 

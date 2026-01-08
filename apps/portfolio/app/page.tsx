@@ -9,7 +9,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#0b0b0b] text-white antialiased px-6">
       {/* Noise overlay */}
       <div aria-hidden className="noise" />
-      <div className="relative z-10">
+      <div className="relative z-10 fade-up">
         {/* Hero */}
         <Hero />
 
