@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  portfolio:
+    build:
+      context: ..
+      dockerfile: docker/portfolio.Dockerfile
+    volumes:
+      - ../:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    working_dir: /app/apps/portfolio
+    command: pnpm dev
+
+  blog:
+    build:
+      context: ..
+      dockerfile: docker/blog.Dockerfile
+    volumes:
+      - ../:/app
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+    working_dir: /app/apps/blog
+    command: pnpm dev
