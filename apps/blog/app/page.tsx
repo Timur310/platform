@@ -4,7 +4,7 @@ import BlogLayout from "@/components/BlogLayout"
 import { BlogPagination } from "@/components/BlogPagination"
 import { BlogPostCard } from "@/components/BlogPostCard"
 import { BlogSearch } from "@/components/BlogSearch"
-import { BlogTags } from "@/components/BlogTags"
+import { Tags } from "@repo/ui"
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
 
         <BlogSearch />
 
-        <BlogTags
+        <Tags
           tags={[
             "frontend",
             "architecture",
@@ -24,6 +24,7 @@ export default function Home() {
             "performance",
             "career",
           ]}
+          cls="mb-20 gap-x-4 gap-y-2 hover:cursor-pointer"
         />
 
         <section>

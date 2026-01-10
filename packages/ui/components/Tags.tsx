@@ -1,6 +1,11 @@
-export function BlogTags({ tags }: { tags: string[] }) {
+type Props = {
+  tags: string[]
+  cls?: string
+}
+
+export function Tags({ tags, cls }: Props) {
     return (
-        <div className="flex flex-wrap gap-x-4 gap-y-2 mb-20">
+        <div className={`flex flex-wrap ${cls}`}>
             {tags.map(tag => (
                 <span
                     key={tag}
